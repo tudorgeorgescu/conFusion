@@ -95,7 +95,7 @@ grunt.initConfig({
         algorithm: 'md5',
         length: 20
       },
-  
+   
   release: {
     // filerev:release hashes(md5) all assets (images, js and css )
     // in dist directory
@@ -172,6 +172,8 @@ grunt.initConfig({
 },
     
 });
+    
+grunt.loadNpmTasks('grunt-git');
     
 grunt.registerTask('serve',['build','connect:dist','watch']);
 
