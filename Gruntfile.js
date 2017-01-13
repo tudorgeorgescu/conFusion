@@ -171,12 +171,24 @@ grunt.initConfig({
   }
 },
     
+    gitpush: {
+            your_target: {
+                options: {
+                    remote: 'https://github.com/tudorgeorgescu/conFusion.git',
+                    branch: 'master'
+                    // Target-specific options go here. 
+                        }
+                }
+        }
+    
 });
     
 grunt.loadNpmTasks('grunt-git');
     
 grunt.registerTask('serve',['build','connect:dist','watch']);
 
+grunt.registerTask('gruntgit',['gitpush']);
+    
 grunt.registerTask('build', [
   'clean',
   'jshint',
