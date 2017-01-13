@@ -175,7 +175,8 @@ grunt.initConfig({
             your_target: {
                 options: {
                     remote: 'https://github.com/tudorgeorgescu/conFusion.git',
-                    branch: 'master'
+                    branch: 'master',
+                    message: 'added from gruntfile'
                     // Target-specific options go here. 
                         }
                 }
